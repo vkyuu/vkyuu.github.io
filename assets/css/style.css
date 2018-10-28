@@ -20,6 +20,8 @@ body{
 header{
     grid-area: h;
     background-color: #000;
+    position: relative;
+    z-index: 99;
 }
 .icon-container.dot{
     background-color: rgba(0,0,0,0);
@@ -32,6 +34,7 @@ header{
     grid-area: p;
     position: fixed;
     height: 100%;
+    z-index: 99;
 }
 .icon-container{
     margin: 0;
@@ -52,10 +55,8 @@ header{
 }
 /*sidepanel*/
 .content-area{
-    display: block;
     background-color: gray;
     grid-area: c;
-    height: 100vh;
 }
 .action-button-container{
     background-color: #2258FF;

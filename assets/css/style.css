@@ -10,20 +10,25 @@ body{
     display: grid;
     grid-gap: 0px;
     grid-template-columns: 168px repeat(11, 1fr);
-    grid-template-rows: 168px auto
+    grid-template-rows: 168px auto;
     grid-template-areas: 
             "p h h h h h h h h h h h"
             "p c c c c c c c c c c c"
             ;
 }
+/*header*/
 header{
-    background-color: aqua;
     grid-area: h;
-    opacity: 0.1;
+    background-color: #000;
 }
+.icon-container.dot{
+    background-color: rgba(0,0,0,0);
+    float: right;
+}
+/*header*/
 /*sidepanel*/
 .side-panel{
-    background-color: #fff;
+    background-color: #000;
     grid-area: p;
     position: fixed;
     height: 100%;
@@ -47,13 +52,10 @@ header{
 }
 /*sidepanel*/
 .content-area{
+    display: block;
     background-color: gray;
     grid-area: c;
-    opacity: 0.1;
-}
-/*footer*/
-footer{
-    grid-area: f;
+    height: 100vh;
 }
 .action-button-container{
     background-color: #2258FF;

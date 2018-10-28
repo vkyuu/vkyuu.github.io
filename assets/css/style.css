@@ -87,12 +87,12 @@ header{
     
 }
 .illustration{
-    width: 1600px;
+    width: 1440px;
     /*margin-top: 96px;
     margin-left: -152px;*/
     position: absolute;
-    bottom: 0;
-    left: -348px;
+    bottom: 80px;
+    left: -240px;
     pointer-events: none;
 }
 /*content*/

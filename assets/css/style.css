@@ -41,17 +41,20 @@ header{
     padding: 0;
     width: 168px;
     height: 168px;
-    background-color: #F6FF2F;
     text-align: center;
     line-height: 56px;
 }
 .icon{
     width: 100%;
 }
+.icon-container.logo{
+    background-color:#F6FF2F;
+}
 .icon-container.action{
     position: absolute;
     width: 100%;
     bottom: 0px;
+    background-color: #1A46D0;
 }
 .btn-action{
     font-family: 'Poppins', sans-serif;
@@ -84,10 +87,10 @@ header{
     
 }
 .illustration{
-    width: 1200px;
+    width: 1320px;
     position: absolute;
-    top: 560px;
-    left: -80px;
+    top: 440px;
+    left: -144px;
 }
 /*content*/
 .action-button-container{

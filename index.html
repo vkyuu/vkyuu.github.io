@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/css/fullpage.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <script type="text/javascript" src="assets/js/fullpage.min.js"></script>
+        <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                
+            </header>
+            <div class="side-panel">
+                <div class="icon-container logo">
+                    <img class="icon" src="assets/img/logo-block_animated.svg" />
+                </div>
+                 <div class="icon-container action">
+                    <img class="icon" src="assets/img/eyes-block_animated.svg" />
+                </div>
+            </div>
+            <div class="content-area"></div>
+            <footer>
+                <button type="button" class="btn-action">See Portfolio</button>
+            </footer>
+        </div>
+        <!--<div id="fullpage">
+            <div class="section fp-auto-height-responsive">Some section</div>
+            <div class="section fp-auto-height-responsive">Some section</div>
+            <div class="section fp-auto-height-responsive">Some section</div>
+            <div class="section fp-auto-height-responsive">Some section</div>
+        </div>-->
+        <script type="text/javascript">
+            new fullpage('#fullpage', {
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true,
+                css3: true,
+            });
+
+            //methods
+            fullpage_api.setAllowScrolling(true);
+        </script>
+    </body>
+</html>

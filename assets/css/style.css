@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 112px repeat(11, 1fr);
+    grid-template-rows: 112px auto 112px;
+    grid-template-areas: 
+            "p h h h h h h h h h h h"
+            "p c c c c c c c c c c c"
+            "p f f f f f f f f f f f";
+}
+header{
+    background-color: aqua;
+    grid-area: h;
+    opacity: 0.1;
+}
+/*sidepanel*/
+.side-panel{
+    background-color: #fff;
+    grid-area: p;
+    position: fixed;
+    height: 100%;
+}
+.icon-container{
+    width: 112px;
+    height: 112px;
+    background-color: #F6FF2F;
+    text-align: center;
+    line-height: 56px;
+}
+.icon{
+    width: 100%;
+}
+.icon-container.action{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+/*sidepanel*/
+.content-area{
+    background-color: gray;
+    grid-area: c;
+    opacity: 0.1;
+}
+/*footer*/
+footer{
+    grid-area: f;
+}
+.btn-action{
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    border: none;
+    background-color: #2258FF;
+    width: 288px;
+    height: 111px;
+    position: absolute;
+    bottom: 0;
+}
+/*footer*/

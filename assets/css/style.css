@@ -21,7 +21,7 @@ header{
     grid-area: h;
     background-color: #000;
     position: relative;
-    z-index: 99;
+    z-index: 999;
 }
 .icon-container.dot{
     background-color: rgba(0,0,0,0);
@@ -34,7 +34,7 @@ header{
     grid-area: p;
     position: fixed;
     height: 100%;
-    z-index: 99;
+    z-index: 999;
 }
 .icon-container{
     margin: 0;
@@ -52,14 +52,6 @@ header{
     position: absolute;
     width: 100%;
     bottom: 0px;
-}
-/*sidepanel*/
-.content-area{
-    background-color: gray;
-    grid-area: c;
-}
-.action-button-container{
-    background-color: #2258FF;
 }
 .btn-action{
     font-family: 'Poppins', sans-serif;
@@ -79,5 +71,20 @@ header{
     text-align: center;
     line-height: 168px;
     text-decoration: none;
+    z-index: 999;
 }
+/*sidepanel*/
+/*content*/
+.content-area{
+    background-color: gray;
+    grid-area: c;
+    position: relative;
+    z-index: 1;
+}
+/*content*/
+.action-button-container{
+    background-color: #2258FF;
+    z-index: 999;
+}
+
 /*footer*/

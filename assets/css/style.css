@@ -19,7 +19,7 @@ body{
 /*header*/
 header{
     grid-area: h;
-    background-color: #000;
+    background-color: #fff;
     position: relative;
     z-index: 999;
 }
@@ -30,11 +30,11 @@ header{
 /*header*/
 /*sidepanel*/
 .side-panel{
-    background-color: #000;
+    background-color: #fff;
     grid-area: p;
     position: fixed;
     height: 100%;
-    z-index: 999;
+    z-index: 998;
 }
 .icon-container{
     margin: 0;
@@ -76,10 +76,18 @@ header{
 /*sidepanel*/
 /*content*/
 .content-area{
-    background-color: gray;
     grid-area: c;
     position: relative;
     z-index: 1;
+}
+.illustration-container{
+    
+}
+.illustration{
+    width: 1200px;
+    position: absolute;
+    top: 560px;
+    left: -80px;
 }
 /*content*/
 .action-button-container{

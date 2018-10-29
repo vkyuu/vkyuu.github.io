@@ -27,14 +27,21 @@ header{
     background-color: rgba(0,0,0,0);
     float: right;
 }
-/*header*/
+/*end-header*/
 /*sidepanel*/
 .side-panel{
-    background-color: #fff;
     grid-area: p;
     position: fixed;
     height: 100%;
-    z-index: 998;
+    z-index: 2;
+}
+.tambal{
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 168px;;
+    height: 45vh;
+    z-index: 3;
 }
 .icon-container{
     margin: 0;
@@ -76,7 +83,16 @@ header{
     text-decoration: none;
     z-index: 999;
 }
-/*sidepanel*/
+.action-button-container{
+    background-color: #2258FF;
+    z-index: 999;
+}
+.icon.swipe-up{
+    position: absolute;
+    bottom: 56px;
+    z-index: 2;
+}
+/*end-sidepanel*/
 /*content*/
 .content-area{
     grid-area: c;
@@ -84,21 +100,50 @@ header{
     z-index: 1;
 }
 .illustration-container{
-    
 }
 .illustration{
     width: 1200px;
     /*margin-top: 96px;
     margin-left: -152px;*/
     position: absolute;
-    bottom: 160px;
+    bottom: 144px;
     left: -72px;
     pointer-events: none;
 }
-/*content*/
-.action-button-container{
-    background-color: #2258FF;
-    z-index: 999;
+.hero-container{
+    position: absolute;
+    top: 72px;
+    left: -112px;
 }
+.hero-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 96px;
+    margin-bottom: 32px;
+    color: #2258FF;
+}
+.desc-separator{
+    width: 96px;
+    height: 12px;
+    background-color: #F6FF2F;
+    margin-bottom: 40px;
+}
+.hero-container h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #2258FF;
+    margin-bottom: 32px;
+}
+.hero-container p{
+    width: 640px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 32px;
+    line-height: 3.5rem;
+}
+/*end-content*/
+
 
 /*footer*/

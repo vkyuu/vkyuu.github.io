@@ -10,12 +10,9 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,700,900" rel="stylesheet">
         <script type="text/javascript" src="assets/js/fullpage.min.js"></script>
         <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/pace.min.js"></script>
     </head>
     <body>
-        <div class="preload">
-            <img src="http://i.imgur.com/KUJoe.gif">
-        </div>
         <div class="container">
             <header>
                 <div class="icon-container dot">
@@ -76,16 +73,13 @@ better world  through design.
                 scrollHorizontally: true,
                 css3: true,
             });
-
+            
             //methods
             fullpage_api.setAllowScrolling(true);
         </script>
         <script>
-            $(function() {
-            $(".preload").fadeOut(2000, function() {
-                $(".container").fadeIn(1000);        
-            });
-        });
+
+
         </script>
     </body>
 </html>

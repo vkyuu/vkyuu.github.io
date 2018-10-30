@@ -10,8 +10,12 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,700,900" rel="stylesheet">
         <script type="text/javascript" src="assets/js/fullpage.min.js"></script>
         <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body>
+        <div class="preload">
+            <img src="http://i.imgur.com/KUJoe.gif">
+        </div>
         <div class="container">
             <header>
                 <div class="icon-container dot">
@@ -49,7 +53,17 @@ better world  through design.
                         <object class="illustration" type="image/svg+xml" data="assets/img/lineart_animated.svg"></object>
                     </div>
                 </div>
-                <div class="section fp-auto-height-responsive">Some section</div>
+                <div class="section fp-auto-height-responsive">
+                    <div class="project-title">
+                        <h1 class="no">01.</h1>
+                        <h1 class="name">Bubble Mail</h1>
+                        <h3 class="total">1/4</h3>
+                        <div class="title-separator"></div>
+                        <div class="preview-container">
+                            <img src="assets/img/preview-bubblemail.png">
+                        </div>
+                    </div>
+                </div>
                 <div class="section fp-auto-height-responsive">Some section</div>
                 <div class="section fp-auto-height-responsive">Some section</div>
                 </div>
@@ -65,6 +79,13 @@ better world  through design.
 
             //methods
             fullpage_api.setAllowScrolling(true);
+        </script>
+        <script>
+            $(function() {
+            $(".preload").fadeOut(2000, function() {
+                $(".container").fadeIn(1000);        
+            });
+        });
         </script>
     </body>
 </html>

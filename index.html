@@ -11,6 +11,7 @@
         <script type="text/javascript" src="assets/js/fullpage.min.js"></script>
         <script type="text/javascript" src="assets/js/fullpage.extensions.min.js"></script>
         <script type="text/javascript" src="assets/js/pace.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
     </head>
     <body>
         <div class="container">
@@ -25,10 +26,13 @@
                 </div>
                 <div class="tambal">
                     <object class="icon swipe-up animated fadeInUp" type="image/svg+xml" data="assets/img/swipe-up-block.svg"></object>
+                    <object class="icon up animated" type="image/svg+xml" data="assets/img/up-block.svg"></object>
+                    <object class="icon down animated" type="image/svg+xml" data="assets/img/down-block.svg"></object>
                 </div>
                 <div class="action-button-container ">
                     <div class="icon-container action">
-                    <object class="icon" type="image/svg+xml" data="assets/img/eyes-block_animated.svg"></object>
+                    <object class="icon animated eye" type="image/svg+xml" data="assets/img/eyes-block_animated.svg"></object>
+                    <object class="icon animated more" type="image/svg+xml" data="assets/img/more-block_animated.svg"></object>
                     </div>
                     <a href="#" class="btn-action">See Portfolio</a>
                 </div>
@@ -65,21 +69,43 @@ better world  through design.
                 <div class="section fp-auto-height-responsive">Some section</div>
                 </div>
         </div>
-       
         <script type="text/javascript">
             new fullpage('#fullpage', {
                 //options here
                 autoScrolling:true,
                 scrollHorizontally: true,
                 css3: true,
-            });
+                onLeave: function(origin, destination, direction){
+                var leavingSection = this;
+                    if(origin.index == 0 && direction =='down'){
+                        $(".swipe-up").removeClass("fadeOutUp");
+                        $(".up").removeClass("fadeOutUp");
+                        $(".down").removeClass("fadeOutDown");
+                        
+                        $(".swipe-up").addClass("fadeOutUp");
+                        $(".up").addClass("fadeInUp");
+                        $(".down").addClass("fadeInDown");
+                       
+                        $(".btn-action").text('See Project');
+                        
+                    }
+                    if(destination.index == 0 && direction =='up'){
+                        $(".swipe-up").removeClass("fadeOutUp");
+                        $(".up").removeClass("fadeInUp");
+                        $(".down").removeClass("fadeInDown");
+                        
+                        $(".swipe-up").addClass("fadeInUp");
+                        $(".up").addClass("fadeOutUp");
+                        $(".down").addClass("fadeOutDown");
+                        
+                         $(".btn-action").text('See Portfolio');
+                    }
+                } 
+                });
             
-            //methods
-            fullpage_api.setAllowScrolling(true);
-        </script>
-        <script>
-
-
+                //methods
+                fullpage_api.setAllowScrolling(true);
+                
         </script>
     </body>
 </html>

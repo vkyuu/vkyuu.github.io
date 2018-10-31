@@ -92,6 +92,17 @@ header{
     position: absolute;
     bottom: 24px;
     z-index: 2;
+     opacity: 1;
+}
+.icon.up{
+    position: absolute;
+    bottom: 80px;
+    opacity: 0;
+}
+.icon.down{
+    position: absolute;
+    bottom: 24px;
+    opacity: 0;
 }
 /*end-sidepanel*/
 /*content*/
@@ -210,7 +221,7 @@ header{
     width: 100%;
     position: absolute;
     right: -32px;
-    top: 80px;
+    top: 72px;
 }
                     .pace {
           -webkit-pointer-events: none;

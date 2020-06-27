@@ -1,4 +1,0 @@
-<svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
-<path stroke="#2258FF" stroke-width="4" d="M2,8A6,6 0,1,1 14,8A6,6 0,1,1 2,8" class="DhmoydyE_0"></path>
-<path d="M2 20L14 20" stroke="#2258FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="DhmoydyE_1"></path>
-<style data-made-with="vivus-instant">.DhmoydyE_0{stroke-dasharray:38 40;stroke-dashoffset:39;animation:DhmoydyE_draw 500ms linear 0ms forwards;}.DhmoydyE_1{stroke-dasharray:12 14;stroke-dashoffset:13;animation:DhmoydyE_draw 500ms linear 0ms forwards;}@keyframes DhmoydyE_draw{100%{stroke-dashoffset:0;}}@keyframes DhmoydyE_fade{0%{stroke-opacity:1;}91.48936170212767%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

@@ -77,6 +77,7 @@
   margin-right: 16px;
   position: relative;
   padding: 16px;
+  z-index: 2;
 }
 
 @media (min-width: 992px) {
@@ -159,6 +160,8 @@
 
 #takeway-text {
   width: 128px;
+  position: relative;
+  z-index: 1;
 }
 
 @media (min-width: 992px) {
@@ -185,6 +188,12 @@
   width: 240px;
 }
 
+@media (min-width: 992px) {
+  #do {
+    width: 400px;
+  }
+}
+
 #ido {
   margin-top: 64px;
 }
@@ -194,11 +203,22 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  /*top: -680px;*/
-  /*left: 80px;*/
   width: 100%;
-  /*max-width: 320px;*/
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  #showcase {
+    top: -80px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  #showcase {
+    top: -156px;
+    width: 320px;
+  }
 }
 
 #coll-video {
@@ -213,6 +233,19 @@
   padding: 24px;
 }
 
+@media (min-width: 768px) {
+  #ido-list {
+    height: 356px;
+  }
+}
+
+@media (min-width: 992px) {
+  #ido-list {
+    padding: 40px;
+    height: 340px;
+  }
+}
+
 .ido-title {
   font-size: 16px;
   font-weight: 800;
@@ -223,6 +256,6 @@
   font-size: 16px;
   font-weight: 300;
   color: #fff;
-  /*max-width: 210px;*/
+  max-width: 320px;
 }
 

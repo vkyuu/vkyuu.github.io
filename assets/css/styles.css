@@ -241,8 +241,11 @@
 
 @media (min-width: 992px) {
   #ido-list {
-    padding: 40px;
     height: 340px;
+    padding-top: 72px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -253,9 +256,16 @@
 }
 
 .ido-subtitle {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #fff;
   max-width: 320px;
+}
+
+#case-text {
+  width: 200px;
+}
+
+#carousel-case {
 }
 

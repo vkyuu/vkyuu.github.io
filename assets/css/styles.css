@@ -263,9 +263,14 @@
 }
 
 #case-text {
-  width: 200px;
+  width: 200px !important;
 }
 
 #carousel-case {
+  height: 576px;
+  background-color: #ddd;
+}
+
+.w-100.d-block.case-image {
 }
 

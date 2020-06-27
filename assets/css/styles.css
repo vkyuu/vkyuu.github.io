@@ -196,7 +196,8 @@
   position: relative;
   /*top: -680px;*/
   /*left: 80px;*/
-  width: 240px;
+  width: 100%;
+  max-width: 320px;
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.3);
 }
 

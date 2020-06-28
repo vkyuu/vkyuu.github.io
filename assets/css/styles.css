@@ -224,6 +224,8 @@
 
 #coll-video {
   padding: 24px;
+  position: relative;
+  z-index: 8;
 }
 
 #ido-list {

@@ -269,7 +269,7 @@
   width: 200px !important;
   /*margin-top: -128px;*/
   position: relative;
-  top: -200px;
+  top: -32px;
   z-index: 3;
 }
 
@@ -277,13 +277,13 @@
   height: 576px;
   background-color: #ddd;
   position: relative;
-  top: -200px;
+  top: -63px;
   z-index: 2;
 }
 
 #case {
   position: relative;
-  margin-top: -56px;
+  /*margin-top: -56px;*/
   z-index: 5;
 }
 

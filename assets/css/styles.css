@@ -274,3 +274,8 @@
 .w-100.d-block.case-image {
 }
 
+#case {
+  position: relative;
+  top: -400px;
+}
+

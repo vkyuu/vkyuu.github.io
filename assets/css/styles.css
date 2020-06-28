@@ -267,7 +267,7 @@
 
 #casey {
   width: 200px !important;
-  /*margin-top: -280px;*/
+  /*margin-top: 140px;*/
   position: relative;
   /*top: -64px;*/
   z-index: 3;
@@ -291,7 +291,7 @@
 
 #case {
   position: relative;
-  /*margin-top: -56px;*/
+  margin-top: 640px;
   z-index: 5;
 }
 

@@ -267,9 +267,9 @@
 
 #casey {
   width: 200px !important;
-  /*margin-top: -128px;*/
+  margin-top: -280px;
   position: relative;
-  top: -64px;
+  /*top: -64px;*/
   z-index: 3;
 }
 
@@ -284,8 +284,9 @@
   height: 576px;
   background-color: #ddd;
   position: relative;
-  top: -96px;
+  /*top: -96px;*/
   z-index: 2;
+  margin-top: -128px;
 }
 
 #case {

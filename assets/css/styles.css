@@ -264,18 +264,26 @@
 
 #casey {
   width: 200px !important;
+  /*margin-top: -128px;*/
+  position: relative;
+  top: -256px;
+  z-index: 3;
 }
 
 #carousel-case {
   height: 576px;
   background-color: #ddd;
-}
-
-.w-100.d-block.case-image {
+  position: relative;
+  top: -280px;
+  z-index: 2;
 }
 
 #case {
   position: relative;
-  top: -400px;
+  margin-top: -300px;
+  z-index: 5;
+}
+
+.w-100.d-block.case-image {
 }
 

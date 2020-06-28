@@ -269,15 +269,22 @@
   width: 200px !important;
   /*margin-top: -128px;*/
   position: relative;
-  top: -32px;
+  top: -64px;
   z-index: 3;
+}
+
+@media (min-width: 992px) {
+  #casey {
+    width: 320px !important;
+    top: -8px;
+  }
 }
 
 #carousel-case {
   height: 576px;
   background-color: #ddd;
   position: relative;
-  top: -63px;
+  top: -96px;
   z-index: 2;
 }
 

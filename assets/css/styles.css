@@ -205,8 +205,8 @@
   position: relative;
   width: 100%;
   max-width: 90%;
-  height: auto;
-  /*max-height: 686px;*/
+  height: 597px;
+  max-height: 686px;
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.3);
   z-index: 10;
 }

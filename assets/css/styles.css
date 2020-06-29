@@ -266,7 +266,7 @@
   max-width: 320px;
 }
 
-#casey {
+.sect {
   width: 200px !important;
   /*margin-top: 140px;*/
   position: relative;
@@ -275,7 +275,7 @@
 }
 
 @media (min-width: 768px) {
-  #casey {
+  .sect {
     width: 320px !important;
     top: -8px;
   }
@@ -292,7 +292,7 @@
 
 #case {
   position: relative;
-  margin-top: 680px;
+  margin-top: 700px;
   z-index: 5;
 }
 
@@ -313,5 +313,26 @@
 }
 
 .w-100.d-block.case-image {
+}
+
+.other-card {
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  /*margin: 0 auto;*/
+  display: block;
+  /*float: left;*/
+}
+
+.col.other-col {
+  padding-top: 40px;
+}
+
+.other-card.odd {
+  float: left;
+}
+
+.other-card.even {
+  float: right;
 }
 

@@ -274,7 +274,7 @@
   z-index: 3;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #casey {
     width: 320px !important;
     top: -8px;
@@ -294,6 +294,22 @@
   position: relative;
   margin-top: 640px;
   z-index: 5;
+}
+
+@media (min-width: 768px) {
+  #case {
+    /*position: relative;*/
+    margin-top: 540px;
+    /*z-index: 5;*/
+  }
+}
+
+@media (min-width: 992px) {
+  #case {
+    /*position: relative;*/
+    margin-top: 720px;
+    /*z-index: 5;*/
+  }
 }
 
 .w-100.d-block.case-image {

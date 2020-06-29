@@ -4,3 +4,4 @@ $(window).on("load",function(){
     $(".uwu").show();
      $(".loader-wrapper").fadeOut("slow");
 });
+luxy.init();

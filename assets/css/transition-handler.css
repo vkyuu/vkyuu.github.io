@@ -1,0 +1,11 @@
+.transition-on {
+  -webkit-transition: top 500ms ease-out;
+  -moz-transition: top 500ms ease-out;
+  -o-transition: top 500ms ease-out;
+  transition: top 500ms ease-out;
+  -webkit-transition: bottom 500ms ease-out;
+  -moz-transition: bottom 500ms ease-out;
+  -o-transition: bottom 500ms ease-out;
+  transition: bottom 500ms ease-out;
+}
+

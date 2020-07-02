@@ -72,23 +72,27 @@
 #cta {
   width: 128px;
   height: 128px;
-  background-color: #000;
+  background: #4131FF !important;
   margin-top: -92px;
   margin-right: 16px;
   position: relative;
   padding: 16px;
   z-index: 2;
+  display: block;
+  /*transition: all 200ms;*/
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
   #cta {
     width: 216px;
     height: 216px;
-    background-color: #000;
+    /*background-color: #000;*/
     margin-top: -256px;
     margin-right: 0px;
     position: relative;
     padding: 24px;
+    /*display: inline-block;*/
   }
 }
 
@@ -295,7 +299,7 @@
 
 #case {
   position: relative;
-  margin-top: -156px;
+  margin-top: -192px;
   z-index: 5;
 }
 
@@ -337,5 +341,111 @@
 
 .other-card.even {
   float: right;
+}
+
+#cta-icon {
+  display: block;
+  position: relative;
+}
+
+#cta-text {
+  display: block;
+  position: relative;
+}
+
+.study-slider {
+  width: 100%;
+  height: 567px;
+  background: #000;
+}
+
+.case-card {
+  width: 100%;
+  background: #000;
+  height: 520px;
+  overflow-y: hidden;
+  cursor: pointer;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.2);
+}
+
+.previewimg {
+  width: 100%;
+  height: auto;
+  transform: translateY(0px);
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
+  z-index: 2;
+  position: relative;
+}
+
+.card-box {
+  height: 128px;
+  width: 100%;
+  background: background: rgba(65, 49, 255, 0.9);
+  position: absolute;
+  background: rgba(65, 49, 255, 0.9);
+  z-index: 3;
+  top: 432px;
+  padding: 24px;
+  transition: all 300ms ease-in-out;
+  /*cursor: pointer;*/
+}
+
+.case-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.case-sub {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.study-button {
+  width: 32px;
+  height: 32px;
+  background-color: #FFF000;
+  position: absolute;
+  top: 416px;
+  right: 24px;
+  z-index: 4;
+  transition: all 300ms ease-in-out;
+}
+
+.study-button img {
+  width: 16px;
+  height: 16px;
+  background-color: #FFF000;
+  display: block;
+  margin: 8px auto;
+  float: none;
+  transition: all 300ms ease-in-out;
+}
+
+#casey {
+  margin-top: -128px;
+}
+
+@media (min-width: 992px) {
+  #casey {
+    margin-top: -480px;
+  }
+}
+
+#case-row-1 {
+  margin-top: -96px;
+}
+
+@media (min-width: 992px) {
+  #case-row-1 {
+    margin-top: -240px;
+  }
 }
 

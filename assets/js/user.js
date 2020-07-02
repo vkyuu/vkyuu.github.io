@@ -1,7 +1,15 @@
 var rellax = new Rellax('.rellax');
-$(".uwu").hide();
+$(".pagez").hide();
 $(window).on("load",function(){
-    $(".uwu").show();
+    $(".pagez").show();
      $(".loader-wrapper").fadeOut("slow");
+    $('.previewimg').css("transition", "transform " + 0.01 * $('.previewimg').height() + "s ease");
 });
-luxy.init();
+
+$(document).ready(function(){
+  $('#cta').hover(function() {
+    $("#cta-icon").animate({top: '-=8px'}, 200);
+  }, function() {
+    $("#cta-icon").animate({top: '+=8px'}, 200);
+  });
+});

@@ -13,3 +13,41 @@ $(document).ready(function(){
     $("#cta-icon").animate({top: '+=8px'}, 200);
   });
 });
+
+$(document).ready(function(){
+    $(document).on('mouseover', '#case-card-1', function(){
+        $("#case-img-1").removeClass("reverse-speed");
+        console.log("over");
+    });
+    $(document).on('mouseout', '#case-card-1', function(){
+        $("#case-img-1").addClass("reverse-speed");
+        console.log("out");
+    });
+
+    $(document).on('mouseover', '#case-card-2', function(){
+        $("#case-img-2").removeClass("reverse-speed");
+        console.log("over");
+    });
+    $(document).on('mouseout', '#case-card-2', function(){
+        $("#case-img-2").addClass("reverse-speed");
+        console.log("out");
+    });
+    
+    $(document).on('mouseover', '#case-card-3', function(){
+        $("#case-img-3").removeClass("reverse-speed");
+        console.log("over");
+    });
+    $(document).on('mouseout', '#case-card-3', function(){
+        $("#case-img-3").addClass("reverse-speed");
+        console.log("out");
+    });
+    
+    $(document).on('mouseover', '#case-card-4', function(){
+        $("#case-img-4").removeClass("reverse-speed");
+        console.log("over");
+    });
+    $(document).on('mouseout', '#case-card-4', function(){
+        $("#case-img-4").addClass("reverse-speed");
+        console.log("out");
+    });
+});

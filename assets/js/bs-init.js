@@ -9,9 +9,9 @@ $(document).ready(function(){
 			}else{
 	     console.log("lagi di touch");
 			 AOS.init({
-  disable: function() {
-    var maxWidth = 9000;
-    return window.innerWidth < maxWidth;
+  		 	disable: function() {
+    		var maxWidth = 9000;
+    		return window.innerWidth < maxWidth;
   }
 });
 			}

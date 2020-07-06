@@ -7,6 +7,7 @@ $(window).on("load",function(){
 });
 
 $(document).ready(function(){
+    $("body").niceScroll();
   $('#cta').hover(function() {
     $("#cta-icon").animate({top: '-=8px'}, 200);
   }, function() {

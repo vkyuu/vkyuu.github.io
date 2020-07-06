@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800">
     <link rel="stylesheet" href="assets/css/fluent.css">
     <link rel="stylesheet" href="assets/css/hover-handler.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
@@ -18,10 +18,8 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body class="cc" style="font-family: Montserrat, sans-serif;background-color: F5F5F5;">
-    <div class="loader-wrapper"><span class="loader"><span class="loader-inner"></span></span>
-    </div>
-    <div class="container pagez">
+<body id="thebody" class="cc" style="font-family: Montserrat, sans-serif;background-color: F5F5F5;">
+    <div class="container pagez" id="main">
         <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
             <div class="container"><a class="navbar-brand" id="company-name" href="#">Company Name</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
@@ -37,9 +35,9 @@
     <section id="hero">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2" id="who" data-rellax-speed="-5">
             <div class="col">
-                <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="head-block" class="rellax transition-on" data-rellax-speed="2"></div><img data-aos="zoom-out-up" data-aos-duration="300" data-aos-once="true" id="logo" class="rellax" src="assets/img/Maulanatazqi.svg" data-rellax-speed="4"></div>
+                <div data-aos="fade" data-aos-duration="100" data-aos-once="true" id="head-block" class="rellax transition-on" data-rellax-speed="2"></div><img data-aos="zoom-out-up" data-aos-duration="100" data-aos-once="true" id="logo" class="rellax" src="assets/img/Maulanatazqi.svg" data-rellax-speed="4"></div>
             <div class="col">
-                <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="summary" class="rellax" data-rellax-speed="3" data-rellax-desktop-speed="1">
+                <div data-aos="fade" data-aos-duration="100" data-aos-once="true" id="summary" class="rellax" data-rellax-speed="3" data-rellax-desktop-speed="1">
                     <h1 id="title">UI/UX Designer</h1>
                     <p id="subtitle">1An aspiring designer specializing in Interface Design.<br></p>
                 </div>
@@ -48,12 +46,12 @@
         <div class="row" id="me">
             <div class="col">
                 <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="foto" class="rellax" data-rellax-speed="0"></div>
-                <div class="d-block float-right rellax hover" data-aos="fade" data-aos-duration="300" data-aos-offset="-100" data-aos-once="true" id="cta" data-rellax-speed="-1" style="color: #4131ff;">
+                <div class="d-block float-right rellax hover" data-aos="fade" data-aos-duration="150" data-aos-offset="-100" data-aos-once="true" id="cta" data-rellax-speed="-1" style="color: #4131ff;">
                     <div id="cta-det"><img id="cta-icon" src="assets/img/download.svg">
                         <h6 id="cta-text">Download Resume</h6>
                     </div>
                 </div>
-                <div class="d-block float-right" id="takeaway"><img data-aos="fade" data-aos-duration="300" data-aos-once="true" id="takeway-text" class="rellax" src="assets/img/Need%20a%20take%20away.svg" data-rellax-speed="-1"></div>
+                <div class="d-block float-right" id="takeaway"><img data-aos="fade" data-aos-duration="150" data-aos-once="true" id="takeway-text" class="rellax" src="assets/img/Need%20a%20take%20away.svg" data-rellax-speed="-1"></div>
             </div>
         </div>
     </section>
@@ -92,7 +90,7 @@
     </section>
     <section id="case">
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 row-cols-xl-1">
-            <div class="col" data-rellax-desktop-speed="1" data-rellax-speed="3"><img data-aos="fade" data-aos-duration="300" data-aos-offset="-320" data-aos-once="true" id="casey" class="rellax sect" src="assets/img/Case%20Study.svg" data-rellax-speed="0.8" data-rellax-desktop-speed="1.2">
+            <div class="col" data-rellax-desktop-speed="1" data-rellax-speed="3"><img data-aos="fade" data-aos-duration="150" data-aos-offset="-320" data-aos-once="true" id="casey" class="rellax sect" src="assets/img/Case%20Study.svg" data-rellax-speed="0.8" data-rellax-desktop-speed="0">
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2"
                     id="case-row-1" style="margin-bottom: 40px;">
                     <div class="col" style="margin-bottom: 40px;">
@@ -100,15 +98,15 @@
                             <div class="study-button"><img src="assets/img/arrow-right.svg"></div>
                             <div class="card-box">
                                 <h1 class="case-title">Bukopin</h1>
-                                <h1 class="case-sub">Web Revamp</h1>
+                                <h1 class="case-sub">Website Revamp</h1>
                             </div><img id="case-img-1" class="previewimg" src="assets/img/buko-landingPage.png"></div>
                     </div>
                     <div class="col" style="margin-bottom: 40px;">
                         <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="case-card-2" class="case-card rellax" data-rellax-desktop-speed="0.8" data-rellax-speed="0.8">
                             <div class="study-button"><img src="assets/img/arrow-right.svg"></div>
                             <div class="card-box">
-                                <h1 class="case-title">Bukopin</h1>
-                                <h1 class="case-sub">Web Revamp</h1>
+                                <h1 class="case-title">BCA Finance</h1>
+                                <h1 class="case-sub">Mobile First Experience</h1>
                             </div><img id="case-img-2" class="previewimg" src="assets/img/buko-landingPage.png"></div>
                     </div>
                 </div>
@@ -117,16 +115,16 @@
                         <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="case-card-3" class="case-card rellax" data-rellax-desktop-speed="1.2" data-rellax-speed="0.8">
                             <div class="study-button"><img src="assets/img/arrow-right.svg"></div>
                             <div class="card-box">
-                                <h1 class="case-title">Bukopin</h1>
-                                <h1 class="case-sub">Web Revamp</h1>
+                                <h1 class="case-title">Vutura</h1>
+                                <h1 class="case-sub">Platform Design</h1>
                             </div><img id="case-img-3" class="previewimg" src="assets/img/buko-landingPage.png"></div>
                     </div>
                     <div class="col" style="margin-bottom: 40px;">
                         <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="case-card-4" class="case-card rellax" data-rellax-desktop-speed="0.8" data-rellax-speed="0.8">
                             <div class="study-button"><img src="assets/img/arrow-right.svg"></div>
                             <div class="card-box">
-                                <h1 class="case-title">Bukopin</h1>
-                                <h1 class="case-sub">Web Revamp</h1>
+                                <h1 class="case-title">Makarim &amp; Taira</h1>
+                                <h1 class="case-sub">Website Revamp</h1>
                             </div><img id="case-img-4" class="previewimg" src="assets/img/buko-landingPage.png"></div>
                     </div>
                 </div>
@@ -135,7 +133,108 @@
     </section>
     <section>
         <div class="row">
-            <div class="col"><img class="sect" src="assets/img/Other%20Works.svg"></div>
+            <div class="col"><img data-aos="fade" data-aos-duration="200" data-aos-once="true" class="sect rellax" src="assets/img/My%20Works.svg" data-rellax-speed="0.7"></div>
+        </div>
+        <div class="row rellax" data-aos="fade" data-aos-duration="200" data-aos-once="true" data-rellax-speed="1.2">
+            <div class="col">
+                <div class="tabtab"><img class="folder-icn" src="assets/img/folder-opened.svg">
+                    <div class="row col-safari-fix">
+                        <div class="col tab-menu-bg">
+                            <h1 id="tab-menu-1" class="folder">UI/UX Designs</h1>
+                            <div id="slctd-1" class="tab-slctd"></div>
+                        </div>
+                        <div class="col">
+                            <h1 id="tab-menu-2" class="folder txt-faded">Other Designs</h1>
+                            <div id="slctd-2" class="tab-slctd faded"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3" id="ui-gallery">
+                    <div class="col">
+                        <div id="card-works-1" class="card-works" style="background-image: url(&quot;assets/img/bubble-cover.png&quot;);background-size: contain;">
+                            <h1 class="works-type">Personal Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">Bubble Mail</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-2" class="card-works" style="background-image: url(&quot;assets/img/prdm-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Pitching</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">PERDAMI Website</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-3" class="card-works" style="background-image: url(&quot;assets/img/telkom-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Client Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">Telkom Sales Kit</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-3" class="card-works" style="background-image: url(&quot;assets/img/kai-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Personal Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">KAI Access</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-3" class="card-works" style="background-image: url(&quot;assets/img/apa-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Personal Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">APA : Child Protection</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-3" class="card-works" style="background-image: url(&quot;assets/img/th-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Client Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">The Hatch</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3" id="other-gallery">
+                    <div class="col">
+                        <div id="card-works-1" class="card-works" style="background-image: url(&quot;assets/img/bubble-cover.png&quot;);background-size: contain;">
+                            <h1 class="works-type">Personal Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">Bubble Mail</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-2" class="card-works" style="background-image: url(&quot;assets/img/prdm-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Pitching</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">PERDAMI Website</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="card-works-3" class="card-works" style="background-image: url(&quot;assets/img/telkom-cover.png&quot;);background-size: cover;">
+                            <h1 class="works-type">Client Project</h1>
+                            <div class="works-box">
+                                <h1 class="works-title">Telkom Sales Kit</h1>
+                                <div class="works-btn"><img class="works-btn-icn" src="assets/img/arrow-right.svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     </div>
@@ -143,7 +242,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/nav-handler.js"></script>
     <script src="assets/js/rellax.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
     <script src="assets/js/user.js"></script>

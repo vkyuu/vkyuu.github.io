@@ -7,8 +7,8 @@ $(document).ready(function(){
         $('#slctd-1').removeClass('faded');
         $('#slctd-2').addClass('faded');
         $('#slctd-3').addClass('faded');
-        $("#ui-gallery").fadeToggle(300);
-        $("#other-gallery").fadeToggle(300);
+        $("#ui-gallery").fadeIn(300);
+        $("#other-gallery").fadeOut(300);
     });
     $('#tab-menu-2').click(function(){
         $(this).removeClass('txt-faded');
@@ -17,8 +17,8 @@ $(document).ready(function(){
         $('#slctd-1').addClass('faded');
         $('#slctd-2').removeClass('faded');
         $('#slctd-3').addClass('faded');
-        $("#ui-gallery").fadeToggle(300);
-        $("#other-gallery").fadeToggle(300);
+        $("#ui-gallery").fadeOut(300);
+        $("#other-gallery").fadeIn(300);
     });
     $('#tab-menu-3').click(function(){
         $(this).removeClass('txt-faded');

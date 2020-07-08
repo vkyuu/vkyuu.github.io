@@ -112,3 +112,12 @@
   opacity: 1 !important;
 }
 
+.getknow:hover + .getknow-icn {
+  /*top: -4px;*/
+  left: 24px;
+}
+
+.getknow:hover {
+  color: #3528D0;
+}
+

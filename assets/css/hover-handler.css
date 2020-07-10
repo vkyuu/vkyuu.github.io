@@ -121,3 +121,8 @@
   color: #3528D0;
 }
 
+.tools-l:hover img {
+  filter: none;
+  opacity: 1;
+}
+

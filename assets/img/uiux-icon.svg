@@ -1,0 +1,15 @@
+<svg width="104" height="106" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M74.267 76.267L103.217 88.6829L89.4698 91.4698L86.6829 105.217L74.267 76.267Z" fill="white"/>
+<path d="M88.7144 48.3793V88.8276H48.4644" stroke="white" stroke-width="2" stroke-dasharray="2 5"/>
+<rect x="1" y="1" width="47.2857" height="87.6207" stroke="#FFF000" stroke-width="2"/>
+<rect x="1" y="1" width="87.5357" height="47.1724" stroke="#FFF000" stroke-width="2"/>
+<rect width="89.5357" height="9.51724" fill="#FFF000"/>
+<rect x="4.10706" y="2.37931" width="13.9643" height="4.75862" fill="#4131FF"/>
+<rect x="4.10706" y="40.4483" width="41.0714" height="3.17241" fill="#FFF000"/>
+<rect x="4.10706" y="52.3448" width="41.0714" height="3.17241" fill="#FFF000"/>
+<rect x="4.10706" y="57.8966" width="41.0714" height="23.7931" fill="#FFF000"/>
+<rect x="46.8214" y="2.37931" width="38.6071" height="4.75862" fill="#4131FF"/>
+<rect x="4.10706" y="11.8966" width="81.3214" height="25.3793" fill="white"/>
+<ellipse cx="88.7143" cy="48.3793" rx="3.28571" ry="3.17241" fill="#FFF000"/>
+<ellipse cx="48.4643" cy="88.8276" rx="3.28571" ry="3.17241" fill="#FFF000"/>
+</svg>

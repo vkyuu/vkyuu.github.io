@@ -2,6 +2,11 @@
   background-image: url("../../assets/img/grid.png");
   background-size: contain;
   background-repeat: repeat;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 992px) {
@@ -160,7 +165,7 @@
 }
 
 #hero {
-  margin-top: -64px;
+  /*margin-top: -64px;*/
 }
 
 @media (min-width: 768px) {
@@ -830,7 +835,8 @@
 }
 
 .about-list.tools {
-  padding: 12px;
+  /*padding: 12px;*/
+  /*margin-left: 0;*/
 }
 
 .tools-l {
@@ -839,6 +845,7 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   margin-bottom: 12px;
+  position: relative;
 }
 
 .tools-l img {
@@ -867,6 +874,130 @@
 @media (min-width: 576px) {
   .tools-l h1 {
     font-size: 16px;
+  }
+}
+
+.col.col-tool {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.navnav {
+  /*position: fixed;*/
+  /*width: px;*/
+  display: block;
+  float: right;
+  /*right: 0;*/
+  padding: 8px;
+  background: rgba(65, 49, 255, 1);
+  backdrop-filter: blur(8px);
+  position: relative;
+  top: 16px;
+  box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navnav {
+    display: block;
+  }
+}
+
+.navnav dl, ol, ul {
+  padding-left: 14px;
+  list-style-type: none;
+}
+
+.navnav li {
+  float: right;
+  margin-right: 24px;
+}
+
+.navnav li a {
+  position: relative;
+  top: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  border-bottom: 3px solid #4131ff;
+}
+
+.navnav li .active {
+  border-bottom: 3px solid #fff000;
+}
+
+.home-icn {
+  position: relative;
+  top: 6px;
+  width: 32px;
+  height: 32px;
+  background: #ffF000;
+  padding: 8px;
+}
+
+.home-icn img {
+  display: block;
+  width: 16px;
+}
+
+.album {
+  width: 800px;
+  height: 800px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.mobile-menu {
+  background: #fff000;
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+  position: relative;
+  top: -2px;
+  padding: 3px;
+}
+
+.mobile-menu:hover {
+  background: #fff000;
+}
+
+.mobile-menu img {
+  width: 16px;
+}
+
+.row.navnav-row {
+  /*position: fixed;*/
+  /*float: right;*/
+  /*right: 10.8%;*/
+  /*z-index: 9999;*/
+}
+
+.mobile-nav-bg {
+  display: block;
+  float: right;
+  width: 56px;
+  height: 56px;
+  background: rgba(65, 49, 255, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 12px;
+}
+
+#mobile-nav {
+  position: relative;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  right: 0%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #mobile-nav {
+    display: none;
   }
 }
 

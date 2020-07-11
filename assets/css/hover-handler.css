@@ -126,3 +126,7 @@
   opacity: 1;
 }
 
+.navnav li:hover a {
+  border-bottom: 3px solid #fff000;
+}
+

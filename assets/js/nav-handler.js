@@ -29,3 +29,9 @@ $(document).ready(function(){
         $('#slctd-3').removeClass('faded');
     });
 });
+
+$(document).ready(function(){
+     $("#works-btn-4").click(function(){
+        $("#works").load("/kai-access.html");
+    });
+});

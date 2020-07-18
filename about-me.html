@@ -20,150 +20,169 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body id="thebody">
+<body id="thebody" style="font-family: Montserrat, sans-serif;">
     <div class="container pagez" id="main">
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
-            <div class="container"><a class="navbar-brand" id="company-name" href="#">Company Name</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div
-                    class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
-                    </ul>
+        <nav class="navbar navbar-dark fixed-top bg-dark off-canvas" data-right-drawer="1" data-open-drawer="0">
+            <div class="container-fluid flex-column"><button class="btn btn-dark drawer-knob knob-override" type="button" data-open="drawer"><i class="fas fa-bars"></i></button>
+                <div class="d-flex justify-content-between brand-line"><a class="navbar-brand" href="#"></a><button class="btn btn-dark btn-nav-over" type="button" data-dismiss="drawer"><span class="sr-only">Toggle Navigation&nbsp;</span><i class="fas fa-times"></i></button></div>
+                <ul class="nav navbar-nav flex-column drawer-menu">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
+                <ul class="nav navbar-nav flex-column bottom-nav">
+                    <li class="nav-item current" role="presentation"><a class="nav-link active" href="index.html" style="opacity: 0.47;">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">About Me<div class="nav-ind"></div></a></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul>
             </div>
-    </div>
-    </nav>
-    <section id="hero">
-        <div class="row" id="me">
+        </nav>
+        <div class="row navnav-row">
             <div class="col">
-                <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="foto" class="rellax" data-rellax-speed="0"></div>
-                <div class="d-block float-right rellax hover" data-aos="fade" data-aos-duration="150" data-aos-offset="-100" data-aos-once="true" id="cta" data-rellax-speed="-3" style="color: #4131ff;">
-                    <div id="cta-det"><img id="cta-icon" src="assets/img/download.svg">
-                        <h6 id="cta-text">Download Resume</h6>
+                <div class="desk-nav-containerz">
+                    <div id="desk-nav" class="navnav">
+                        <ul>
+                            <li><a class="active" href="about-me.html">About Me</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <div class="home-icn"><img src="assets/img/home.svg"></div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div><img class="nama" src="assets/img/Maulanatazqi%20N%20Soffian.svg">
-        <p class="summary">Born in Yogyakarta, 6th of march, I always in pursue of great visual communication design. I often dabble in new technologies to gain better understanding of the future. Refers to myself as an observer type who has interest on human behaviour,
-            i found myself fit right in on UI/UX Design.</p>
-    </section>
-    <section class="sect-about"><img class="sect skillset" src="assets/img/My%20Skillsets.svg">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3" style="margin-top: 40px;">
-            <div class="col">
-                <div class="skill-item"><img class="skill-img" src="assets/img/uiux-icon.svg">
-                    <h1 class="skill-title">UI/UX Design</h1>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skill-item"><img class="skill-img" src="assets/img/id-icon.svg">
-                    <h1 class="skill-title">Interaction Design</h1>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skill-item"><img class="skill-img" src="assets/img/di-icon.svg">
-                    <h1 class="skill-title">Digital Imaging</h1>
+                <div id="mobile-nav">
+                    <div class="mobile-nav-bg"><button class="btn btn-primary mobile-menu" type="button" data-open="drawer" data-dismiss="drawer"><img src="assets/img/menu.svg"></button></div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="sect-about"><img class="sect skillset" src="assets/img/My%20Journey.svg">
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2" style="margin-top: 40px;">
-            <div class="col" style="margin-bottom: 32px;">
-                <div class="grad">
-                    <h1 class="grad-title">Graduated from</h1>
-                    <div class="about-list" style="margin-top: 32px;">
-                        <h1 class="float-left list-txt">Multimedia Vocational HS</h1>
-                        <h1 class="float-right list-txt">2012-2015</h1>
-                    </div>
-                    <div class="about-list" style="margin-top: 16px;">
-                        <h1 class="float-left list-txt">Telkom University : Vis Com Design</h1>
-                        <h1 class="float-right list-txt">2015-2019</h1>
+        <section id="hero" style="margin-top: 24px;">
+            <div class="row" id="me">
+                <div class="col">
+                    <div data-aos="fade" data-aos-duration="300" data-aos-once="true" id="foto" class="rellax" data-rellax-speed="0"></div>
+                </div>
+            </div><img class="nama" src="assets/img/Maulanatazqi%20N%20Soffian.svg">
+            <p class="summary">Born in Yogyakarta, 6th of march, I always in pursue of great visual communication design. I often dabble in new technologies to gain better understanding of the future. Refers to myself as an observer type who has interest on human behaviour,
+                i found myself fit right in on UI/UX Design.</p>
+        </section>
+        <section class="sect-about"><img class="sect skillset" src="assets/img/My%20Skillsets.svg">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3" style="margin-top: 40px;">
+                <div class="col">
+                    <div class="skill-item"><img class="skill-img" src="assets/img/uiux-icon.svg">
+                        <h1 class="skill-title">UI/UX Design</h1>
                     </div>
                 </div>
-                <div class="grad" style="margin-top: 48px;">
-                    <h1 class="grad-title">Work Experiences</h1>
-                    <div class="about-list" style="margin-top: 32px;">
-                        <h1 class="txt-status">Intern</h1>
-                        <h1 class="float-left list-txt">UI/UX Designer @ Vutura</h1>
-                        <h1 class="float-right list-txt">2018-2019</h1>
+                <div class="col">
+                    <div class="skill-item"><img class="skill-img" src="assets/img/id-icon.svg">
+                        <h1 class="skill-title">Interaction Design</h1>
                     </div>
-                    <div class="about-list" style="margin-top: 16px;">
-                        <h1 class="txt-status">Fulltime</h1>
-                        <h1 class="float-left list-txt">UI/UX Designer @ Rack Digital</h1>
-                        <h1 class="float-right list-txt">2019-2020</h1>
+                </div>
+                <div class="col">
+                    <div class="skill-item"><img class="skill-img" src="assets/img/di-icon.svg">
+                        <h1 class="skill-title">Digital Imaging</h1>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="grad">
-                    <h1 class="grad-title">Tools i've used</h1>
-                    <div class="about-list tools-list" style="margin-top: 32px;">
-                        <h1 class="list-txt tools-txt">“Tools was never relevant to my works, i do great design anyway”</h1>
+        </section>
+        <section class="sect-about"><img class="sect skillset" src="assets/img/My%20Journey.svg">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2" style="margin-top: 40px;">
+                <div class="col" style="margin-bottom: 32px;">
+                    <div class="grad">
+                        <h1 class="grad-title">Graduated from</h1>
+                        <div class="about-list" style="margin-top: 32px;">
+                            <h1 class="float-left list-txt">Multimedia Vocational HS</h1>
+                            <h1 class="float-right list-txt">2012-2015</h1>
+                        </div>
+                        <div class="about-list" style="margin-top: 16px;">
+                            <h1 class="float-left list-txt">Telkom University : Vis Com Design</h1>
+                            <h1 class="float-right list-txt">2015-2019</h1>
+                        </div>
                     </div>
-                    <div class="about-list tools" style="margin-top: 16px;">
+                    <div class="grad" style="margin-top: 48px;">
+                        <h1 class="grad-title">Work Experiences</h1>
+                        <div class="about-list" style="margin-top: 32px;">
+                            <h1 class="txt-status">Intern</h1>
+                            <h1 class="float-left list-txt">UI/UX Designer @ Vutura</h1>
+                            <h1 class="float-right list-txt">2018-2019</h1>
+                        </div>
+                        <div class="about-list" style="margin-top: 16px;">
+                            <h1 class="txt-status">Fulltime</h1>
+                            <h1 class="float-left list-txt">UI/UX Designer @ Rack Digital</h1>
+                            <h1 class="float-right list-txt">2019-2020</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grad">
+                        <h1 class="grad-title">Tools i've used</h1>
+                        <div class="about-list tools-list" style="margin-top: 32px;">
+                            <h1 class="list-txt tools-txt">“Tools was never relevant to my works, i do great design anyway”</h1>
+                        </div>
+                        <div class="about-list tools" style="margin-top: 16px;">
+                            <div class="row">
+                                <div class="col col-tool">
+                                    <div class="tools-l"><img src="assets/img/tools-adobe.png">
+                                        <h1>Adobe Suites</h1>
+                                    </div>
+                                </div>
+                                <div class="col col-tool">
+                                    <div class="tools-l"><img src="assets/img/tools-figma.png">
+                                        <h1>Figma</h1>
+                                    </div>
+                                </div>
+                                <div class="col col-tool">
+                                    <div class="tools-l"><img src="assets/img/tools-sketch.png">
+                                        <h1>Sketch App</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-tool">
+                                    <div class="tools-l"><img src="assets/img/tools-affinity.png">
+                                        <h1>Affinity Suites</h1>
+                                    </div>
+                                </div>
+                                <div class="col col-tool">
+                                    <div class="tools-l"><img src="assets/img/tools-invision.png">
+                                        <h1>Invision Studio</h1>
+                                    </div>
+                                </div>
+                                <div class="col col-tool">
+                                    <div class="tools-l"><img src="assets/img/tools-uxp.png">
+                                        <h1>Uxpressia</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 128px;">
+            <div class="row">
+                <div class="col"><img data-aos="fade" data-aos-duration="200" data-aos-once="true" class="sect" src="assets/img/Lets%20Talk.svg" data-rellax-speed="0.7"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <h1 class="hello">Say hello to</h1>
                         <div class="row">
-                            <div class="col col-tool">
-                                <div class="tools-l"><img src="assets/img/tools-adobe.png">
-                                    <h1>Adobe Suites</h1>
-                                </div>
-                            </div>
-                            <div class="col col-tool">
-                                <div class="tools-l"><img src="assets/img/tools-figma.png">
-                                    <h1>Figma</h1>
-                                </div>
-                            </div>
-                            <div class="col col-tool">
-                                <div class="tools-l"><img src="assets/img/tools-sketch.png">
-                                    <h1>Sketch App</h1>
-                                </div>
+                            <div class="col">
+                                <h1 class="email">maulanatazqi@gmail.com</h1>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col col-tool">
-                                <div class="tools-l"><img src="assets/img/tools-affinity.png">
-                                    <h1>Affinity Suites</h1>
-                                </div>
-                            </div>
-                            <div class="col col-tool">
-                                <div class="tools-l"><img src="assets/img/tools-invision.png">
-                                    <h1>Invision Studio</h1>
-                                </div>
-                            </div>
-                            <div class="col col-tool">
-                                <div class="tools-l"><img src="assets/img/tools-uxp.png">
-                                    <h1>Uxpressia</h1>
-                                </div>
-                            </div>
-                        </div>
+                        <a class="getknow-link" href="#">
+                            <h1 class="getknow">or if you prefer whatsapp</h1><img class="getknow-icn" src="assets/img/right-arrow.svg"></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section style="margin-top: 128px;">
-        <div class="row">
-            <div class="col"><img data-aos="fade" data-aos-duration="200" data-aos-once="true" class="sect" src="assets/img/Lets%20Talk.svg" data-rellax-speed="0.7"></div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div>
-                    <h1 class="hello">Say hello to</h1>
-                    <div class="row">
-                        <div class="col">
-                            <h1 class="email">maulanatazqi@gmail.com</h1>
-                        </div>
-                    </div>
-                    <a class="getknow-link" href="#">
-                        <h1 class="getknow">or if you prefer whatsapp</h1><img class="getknow-icn" src="assets/img/right-arrow.svg"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section style="margin-top: 128px;">
-        <h1 class="footer-txt">©2020 Designed and Developed by yours truly</h1>
-        <div class="footer"></div>
-    </section>
+        </section>
+        <section style="margin-top: 128px;">
+            <h1 class="footer-txt">©2020 Designed and Developed by yours truly</h1>
+            <div class="footer"></div>
+        </section>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

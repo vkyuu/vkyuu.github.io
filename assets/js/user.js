@@ -4,6 +4,9 @@ $(window).on("load",function(){
     $(".pagez").show();
      $(".loader-wrapper").fadeOut("slow");
     $('.previewimg').css("transition", "transform " + 0.01 * $('.previewimg').height() + "s ease");
+    $(document).ready(function(){
+        fixedFunction();
+    });
 });
 
 $(document).ready(function(){
@@ -52,3 +55,21 @@ $(document).ready(function(){
         console.log("out");
     });
 });
+
+$(document).ready(function(){
+fixedFunction();
+});
+$(window).resize(function(){
+fixedFunction();
+});
+
+function fixedFunction(){
+var containerWidth = $(".pagez").outerWidth();
+var elementWidth = $(".desk-nav-container").outerWidth();
+var containerOffsetLeft = $(".pagez").offset().left;
+var offsetPadding = 15;
+var containerOffsetRight = containerOffsetLeft + containerWidth - elementWidth - offsetPadding;
+	$(".desk-nav-container").css("left", containerOffsetRight);
+}
+
+

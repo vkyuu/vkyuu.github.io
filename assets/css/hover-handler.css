@@ -115,10 +115,12 @@
 .getknow:hover + .getknow-icn {
   /*top: -4px;*/
   left: 24px;
+  transform: rotate(-45deg);
 }
 
 .getknow:hover {
   color: #3528D0;
+  left: 8px;
 }
 
 .tools-l:hover img {
@@ -127,6 +129,15 @@
 }
 
 .navnav li:hover a {
+  opacity: 1;
   border-bottom: 3px solid #fff000;
+}
+
+.email:hover {
+  float: left;
+  background-color: #4131ff;
+  color: #fff;
+  /*width: 100%;*/
+  /*font-weight: 800;*/
 }
 

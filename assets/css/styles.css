@@ -47,11 +47,13 @@ html {
   margin-top: -192px;
   position: relative;
   z-index: 0;
+  top: -64px;
 }
 
 @media (min-width: 576px) {
   #foto {
     margin-top: -164px;
+    height: 540px;
   }
 }
 
@@ -63,13 +65,15 @@ html {
 
 @media (min-width: 992px) {
   #foto {
-    margin-top: 24px;
+    margin-top: 0px;
+    height: 540px;
   }
 }
 
 #who {
   position: relative;
   z-index: 1;
+  top: -32px;
 }
 
 @media (min-width: 992px) {
@@ -164,13 +168,9 @@ html {
   }
 }
 
-#hero {
-  /*margin-top: -64px;*/
-}
-
 @media (min-width: 768px) {
   #hero {
-    margin-top: 0px;
+    /*margin-top: 64px;*/
   }
 }
 
@@ -225,7 +225,7 @@ html {
   /*margin-right: auto;*/
   position: relative;
   width: 100%;
-  min-height: 597px;
+  min-height: 320px;
   height: auto;
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -463,7 +463,7 @@ html {
 }
 
 #case-row-1 {
-  margin-top: -80px;
+  margin-top: -40px;
   position: relative;
   z-index: 100;
 }
@@ -617,12 +617,14 @@ html {
 }
 
 .email {
+  font-weight: 300;
   font-size: 24px;
   margin-top: 16px;
   border-bottom: 3px solid #FFF000;
   display: block;
   float: left;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 
 @media (min-width: 576px) {
@@ -650,6 +652,8 @@ html {
   font-weight: 800;
   color: #4131FF;
   transition: all 200ms ease-in-out;
+  position: relative;
+  left: 0;
 }
 
 @media (min-width: 576px) {
@@ -709,6 +713,16 @@ html {
   width: 320px;
 }
 
+.cta-disable {
+  display: none !important;
+}
+
+@media (min-width: 576px) {
+  .cta-disable {
+    display: block !important;
+  }
+}
+
 @media (min-width: 768px) {
   .nama {
     margin-top: -88px;
@@ -718,11 +732,19 @@ html {
   }
 }
 
+#hero {
+}
+
 .summary {
-  margin-top: 32px;
+  margin-top: 80px;
   font-size: 16px;
   line-height: 32px;
-  max-width: 720px;
+  max-width: 680px;
+  background: #FFF;
+  padding: 32px;
+  box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.08);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skillset {
@@ -883,18 +905,16 @@ html {
 }
 
 .navnav {
-  /*position: fixed;*/
-  /*width: px;*/
   display: block;
   float: right;
-  /*right: 0;*/
   padding: 8px;
   background: rgba(65, 49, 255, 1);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
   position: relative;
   top: 16px;
   box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.15);
   display: none;
+  z-index: 999;
 }
 
 @media (min-width: 768px) {
@@ -923,10 +943,12 @@ html {
   text-align: center;
   padding: 8px;
   text-decoration: none;
-  border-bottom: 3px solid #4131ff;
+  border-bottom: 3px solid transparent;
+  opacity: 0.5;
 }
 
 .navnav li .active {
+  opacity: 1;
   border-bottom: 3px solid #fff000;
 }
 
@@ -972,8 +994,12 @@ html {
 .row.navnav-row {
   /*position: fixed;*/
   /*float: right;*/
-  /*right: 10.8%;*/
+  /*top: 0px;*/
+  /*right: 1px;*/
   /*z-index: 9999;*/
+  /*right: 0%;*/
+  /*top: 0%;*/
+  /*transform: translateX(-9%);*/
 }
 
 .mobile-nav-bg {
@@ -999,5 +1025,12 @@ html {
   #mobile-nav {
     display: none;
   }
+}
+
+.desk-nav-container {
+  top: -8px;
+  /*width: 640px;*/
+  z-index: 9999;
+  position: fixed;
 }
 

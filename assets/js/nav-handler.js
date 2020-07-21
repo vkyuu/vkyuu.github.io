@@ -35,7 +35,3 @@ $(document).ready(function(){
         $("#works").load("/kai-access.html");
     });
 });
-
-function goBack() {
-  window.history.back();
-}

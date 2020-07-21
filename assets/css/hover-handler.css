@@ -53,7 +53,7 @@
 
 .card-works:hover .works-btn {
   /*height: 32px;*/
-  width: 48px;
+  width: 56px;
   animation: pulse3 1s infinite;
 }
 
@@ -139,5 +139,9 @@
   color: #fff;
   /*width: 100%;*/
   /*font-weight: 800;*/
+}
+
+.skill-item:hover {
+  top: -8px;
 }
 

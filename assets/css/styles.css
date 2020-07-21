@@ -220,7 +220,7 @@ html {
   margin-top: 64px;
 }
 
-#showcase {
+.showcase {
   display: block;
   /*margin-right: auto;*/
   position: relative;
@@ -230,17 +230,18 @@ html {
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.3);
   z-index: 10;
   pointer-events: none;
+  background-color: transparent;
 }
 
 @media (min-width: 768px) {
-  #showcase {
+  .showcase {
     top: -80px;
     width: 200px;
   }
 }
 
 @media (min-width: 992px) {
-  #showcase {
+  .showcase {
     top: -156px;
     width: 320px;
   }
@@ -547,7 +548,7 @@ html {
   height: 340px;
   background: #000;
   padding: 16px;
-  cursor: pointer;
+  /*cursor: pointer;*/
   margin-bottom: 30px;
   transition: all 200ms ease-in-out;
   /*box-shadow: none;*/
@@ -707,7 +708,7 @@ html {
 }
 
 .nama {
-  margin-top: -52px;
+  margin-top: -140px;
   position: relative;
   z-index: 1;
   width: 320px;
@@ -725,7 +726,7 @@ html {
 
 @media (min-width: 768px) {
   .nama {
-    margin-top: -88px;
+    margin-top: -156px;
     position: relative;
     z-index: 1;
     width: 520px;
@@ -764,6 +765,9 @@ html {
   height: 240px;
   background-color: #4131FF;
   margin-bottom: 24px;
+  position: relative;
+  top: 0;
+  transition: all 200ms ease-in-out;
 }
 
 .skill-img {
@@ -799,7 +803,7 @@ html {
 
 .list-txt {
   line-height: 32px;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
   display: block;
 }
@@ -1047,10 +1051,10 @@ html {
 .article-heading {
   font-size: 40px;
   font-weight: 800;
-  display: block;
+  /*display: block;*/
   color: #4131ff;
-  float: left;
-  clear: left;
+  /*float: left;*/
+  /*clear: left;*/
 }
 
 @media (min-width: 576px) {
@@ -1062,7 +1066,7 @@ html {
 .article-type {
   font-size: 16px;
   font-weight: 800;
-  display: block;
+  /*display: block;*/
   color: #4131ff;
   float: left;
   background-color: #fff000;
@@ -1074,7 +1078,7 @@ html {
 .work-sum-container {
   position: relative;
   width: 90%;
-  height: 280px;
+  /*height: 280px;*/
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(4px);
   padding: 32px;
@@ -1085,7 +1089,7 @@ html {
 
 @media (min-width: 576px) {
   .work-sum-container {
-    height: 280px;
+    /*height: 280px;*/
   }
 }
 
@@ -1094,12 +1098,25 @@ html {
     width: 100%;
     top: 256px;
     margin: 0 auto;
-    height: 256px;
+    /*height: 256px;*/
   }
 }
 
 .works-cover {
   margin-top: 24px;
+  width: 100%;
+  max-height: 320px;
+  background-image: url("../../assets/img/kai-cover.png");
+  background-size: cover;
+  height: 100vh;
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .works-cover {
+    width: 171%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1113,6 +1130,52 @@ html {
   width: 100%;
   font-size: 16px;
   position: relative;
-  float: left;
+  /*float: left;*/
+  line-height: 200%;
+}
+
+.showcase.works-video {
+  width: 100%;
+  /*float: left;*/
+  margin: 0 auto;
+  box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .showcase.works-video {
+    width: auto;
+    float: right;
+  }
+}
+
+.works-content {
+  margin-top: -132px;
+}
+
+@media (min-width: 768px) {
+  .works-content {
+    margin-top: 356px;
+  }
+}
+
+#other-works {
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  #other-works {
+    margin-top: -96px;
+  }
+}
+
+@media (min-width: 992px) {
+  #other-works {
+    margin-top: -128px;
+  }
+}
+
+.works-img {
+  width: 100%;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
 }
 

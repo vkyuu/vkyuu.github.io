@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+#loadload {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -170,7 +174,7 @@ html {
 
 @media (min-width: 768px) {
   #hero {
-    /*margin-top: 64px;*/
+    margin-top: 40px;
   }
 }
 
@@ -382,7 +386,7 @@ html {
   height: 520px;
   max-height: 520px;
   overflow-y: hidden;
-  cursor: pointer;
+  /*cursor: pointer;*/
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 2;
@@ -538,7 +542,8 @@ html {
 }
 
 .col-safari-fix {
-  max-width: 1020px !important;
+  margin: 0 auto;
+  max-width: 960px !important;
 }
 
 .card-works {
@@ -553,6 +558,7 @@ html {
   transition: all 200ms ease-in-out;
   /*box-shadow: none;*/
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  /*filter: grayscale(100%);*/
 }
 
 .works-box {
@@ -749,13 +755,13 @@ html {
 }
 
 .skillset {
-  margin-top: 80px;
+  /*margin-top: 80px;*/
   display: block;
 }
 
 @media (min-width: 768px) {
   .skillset {
-    margin-top: 156px;
+    margin-top: 280px;
   }
 }
 
@@ -1177,5 +1183,39 @@ html {
 .works-img {
   width: 100%;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.sect-about {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .sect-about {
+    margin-top: -156px;
+  }
+}
+
+.sect-article {
+  margin-top: -156px;
+}
+
+@media (min-width: 768px) {
+  .sect-article {
+    margin-top: 156px;
+  }
+}
+
+.my-time {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .my-time {
+    display: block;
+  }
+}
+
+.img-grid .col {
+  margin-bottom: 32px;
 }
 

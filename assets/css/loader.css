@@ -4,11 +4,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #242f3f !important;
+  background-color: #4131ff !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 999999;
 }
 
 .loader {
@@ -17,7 +17,7 @@
   height: 30px;
   position: relative;
   top: 0;
-  border: 4px solid #Fff;
+  border: 4px solid #Fff000;
   animation: loader 2s infinite ease;
   z-index: 999;
 }
@@ -26,7 +26,7 @@
   vertical-align: top;
   display: inline-block;
   width: 100%;
-  background-color: #fff;
+  background-color: #fff000;
   animation: loader-inner 2s infinite ease-in;
 }
 

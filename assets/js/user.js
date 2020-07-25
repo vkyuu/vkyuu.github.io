@@ -3,7 +3,7 @@ $(".pagez").hide();
 $(window).on("load",function(){
     $(".pagez").show();
      $(".loader-wrapper").fadeOut("slow");
-    $('.previewimg').css("transition", "transform " + 0.01 * $('.previewimg').height() + "s ease");
+    $('.previewimg').css("transition", "transform " + 0.0007 * $('.previewimg').height() + "s ease");
     $(document).ready(function(){
         fixedFunction();
     });
@@ -18,7 +18,7 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $(document).on('mouseover', '#case-card-1', function(){
         $("#case-img-1").removeClass("reverse-speed");
         console.log("over");
@@ -54,7 +54,7 @@ $(document).ready(function(){
         $("#case-img-4").addClass("reverse-speed");
         console.log("out");
     });
-});
+});*/
 
 $(document).ready(function(){
 fixedFunction();

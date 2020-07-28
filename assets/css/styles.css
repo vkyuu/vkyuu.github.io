@@ -1219,3 +1219,45 @@ html {
   margin-bottom: 32px;
 }
 
+.pain-point li {
+  display: block;
+  background: #FF4A31;
+  padding: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  color: #fff;
+  /*width: 100%;*/
+}
+
+@media (min-width: 992px) {
+  .pain-point li {
+    display: inline-block;
+  }
+}
+
+.pain-point {
+  margin-left: -12px;
+}
+
+.finding {
+  color: #fff;
+  background: #4131ff;
+  padding: 8px;
+}
+
+.direction {
+  color: #fff;
+  font-weight: 600;
+  background: #4131ff;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.direction p {
+  margin-bottom: 0px;
+}
+
+.row-fix-height {
+  margin-top: 580px;
+}
+

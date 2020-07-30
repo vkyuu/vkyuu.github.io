@@ -34,7 +34,7 @@ html {
 
 #subtitle {
   font-size: 16px;
-  max-width: 356px;
+  max-width: 280px;
 }
 
 #summary {
@@ -47,37 +47,40 @@ html {
   width: 100%;
   max-width: 920px;
   height: 576px;
-  background-color: #EBF3F5;
+  background-color: #dbe3e5;
   margin-top: -192px;
   position: relative;
   z-index: 0;
-  top: -64px;
+  top: -80px;
+  background: url(../../assets/img//foto-1-small.png);
 }
 
 @media (min-width: 576px) {
   #foto {
-    margin-top: -164px;
-    height: 540px;
+    /*margin: 40px auto 0px auto;*/
+    height: 400px;
+    /*background: url(../../assets/img/foto-1.png);*/
   }
 }
 
 @media (min-width: 768px) {
   #foto {
     margin-top: -32px;
+    background: url(../../assets/img/foto-1.png);
   }
 }
 
 @media (min-width: 992px) {
   #foto {
     margin-top: 0px;
-    height: 540px;
+    height: 400px;
   }
 }
 
 #who {
   position: relative;
   z-index: 1;
-  top: -32px;
+  top: -75px;
 }
 
 @media (min-width: 992px) {

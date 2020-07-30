@@ -80,7 +80,14 @@ html {
 #who {
   position: relative;
   z-index: 1;
-  top: -75px;
+  top: 0px;
+}
+
+@media (min-width: 768px) {
+  #who {
+    top: -40px;
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: 992px) {

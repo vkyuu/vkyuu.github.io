@@ -16,6 +16,12 @@
   background-color: #4131FF;
 }
 
+.play:hover {
+  box-shadow: 0 0 0 rgba(0,0,0, 0.4);
+  animation: pulse4 1s infinite;
+  background-color: #4131FF;
+}
+
 @keyframes pulse {
   0% {
     -moz-box-shadow: 0 0 0 0 rgba(65,49,255,0.4);
@@ -24,6 +30,21 @@
   70% {
     -moz-box-shadow: 0 0 0 24px rgba(65,49,255,0);
     box-shadow: 0 0 0 24px rgba(65,49,255,0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(65,49,255, 0);
+    box-shadow: 0 0 0 0 rgba(65,49,255,0);
+  }
+}
+
+@keyframes pulse4 {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(65,49,255,0.4);
+    box-shadow: 0 0 0 0 rgba(65,49,255,0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 12px rgba(65,49,255,0);
+    box-shadow: 0 0 0 12px rgba(65,49,255,0);
   }
   100% {
     -moz-box-shadow: 0 0 0 0 rgba(65,49,255, 0);

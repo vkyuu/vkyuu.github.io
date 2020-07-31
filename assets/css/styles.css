@@ -58,14 +58,14 @@ html {
 @media (min-width: 576px) {
   #foto {
     /*margin: 40px auto 0px auto;*/
-    height: 400px;
+    height: 576px;
     /*background: url(../../assets/img/foto-1.png);*/
   }
 }
 
 @media (min-width: 768px) {
   #foto {
-    margin-top: -32px;
+    margin-top: -40px !important;
     background: url(../../assets/img/foto-1.png);
   }
 }
@@ -93,7 +93,7 @@ html {
 @media (min-width: 992px) {
   #summary {
     margin-left: 64px;
-    margin-top: 96px;
+    margin-top: 114px;
   }
 }
 
@@ -1269,5 +1269,35 @@ html {
 
 .row-fix-height {
   margin-top: 580px;
+}
+
+.scroll-indicator {
+  width: 180px;
+  position: absolute;
+  top: 350px;
+  left: -24px;
+  float: left;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .scroll-indicator {
+    display: block;
+  }
+}
+
+.arrow-anim {
+  height: 96px;
+  position: absolute;
+  top: 350px;
+  left: 156px;
+  float: left;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .arrow-anim {
+    display: block;
+  }
 }
 

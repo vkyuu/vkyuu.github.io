@@ -473,6 +473,12 @@ html {
 
 @media (min-width: 992px) {
   #casey {
+    margin-top: -340px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #casey {
     margin-top: -480px;
   }
 }

@@ -4,7 +4,7 @@ $(window).on("load",function(){
     $(".pagez").show();
      $(".loader-wrapper").fadeOut("slow");
     $('.previewimg').css("transition", "transform " + 0.0007 * $('.previewimg').height() + "s ease");
-    //rellax.refresh();
+    rellax.refresh();
 });
 
 $(document).ready(function(){

@@ -1,6 +1,6 @@
-var rellax = new Rellax('.rellax');
 $(".pagez").hide();
 $(window).on("load",function(){
+    var rellax = new Rellax('.rellax');
     $(".pagez").show();
      $(".loader-wrapper").fadeOut("slow");
     $('.previewimg').css("transition", "transform " + 0.0007 * $('.previewimg').height() + "s ease");

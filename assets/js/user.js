@@ -1,7 +1,6 @@
 $(".pagez").hide();
 var rellax = new Rellax('.rellax');
 $(window).on("load",function(){
-    rellax.refresh();
     $(".pagez").show();
      $(".loader-wrapper").fadeOut("slow");
     $('.previewimg').css("transition", "transform " + 0.0007 * $('.previewimg').height() + "s ease");

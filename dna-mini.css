@@ -2,11 +2,11 @@
   --background-color: rgba(255,255,255,0);
   --strand-color: #121212;
   --strand-color-alt: #131E59;
-  --strand-width: 10rem;
-  --strand-height: 2rem;
-  --strand-line: .5rem;
+  --strand-width: 2.5rem;
+  --strand-height: .5rem;
+  --strand-line: .125rem;
   --strand-ball: calc(var(--strand-height) * .75);
-  --animation-duration: 0.4s;
+  --animation-duration: 0.7s;
   --animation-delay: calc(var(--animation-duration) * -.375);
 }
 

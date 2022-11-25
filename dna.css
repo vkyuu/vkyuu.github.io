@@ -1,0 +1,100 @@
+:root {
+  --background-color: #153AFF;
+  --strand-color: #121212;
+  --strand-color-alt: #121212;
+  --strand-width: 5rem;
+  --strand-height: 1rem;
+  --strand-line: .250rem;
+  --strand-ball: calc(var(--strand-height) * .75);
+  --animation-duration: .5s;
+  --animation-delay: calc(var(--animation-duration) * -.375);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+.dna {
+  width: var(--strand-width);
+}
+
+.strand {
+  position: relative;
+  width: var(--strand-width);
+  height: var(--strand-height);
+}
+.strand:nth-child(3n) {
+  --strand-color: var(--strand-color-alt);
+}
+.strand::before, .strand::after {
+  content: "";
+  position: absolute;
+  background: var(--strand-color);
+  -webkit-animation-duration: calc(var(--animation-duration));
+          animation-duration: calc(var(--animation-duration));
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: calc(var(--s) * var(--animation-delay));
+          animation-delay: calc(var(--s) * var(--animation-delay));
+}
+.strand::before {
+  left: calc(var(--strand-ball) / 2);
+  top: calc((var(--strand-height) - var(--strand-line)) / 2);
+  width: calc(var(--strand-width) - var(--strand-ball));
+  height: var(--strand-line);
+  -webkit-animation-name: line;
+          animation-name: line;
+  will-change: transform;
+}
+.strand::after {
+  top: calc((var(--strand-height) - var(--strand-ball)) / 2);
+  width: var(--strand-ball);
+  height: var(--strand-ball);
+  border-radius: 50%;
+  box-shadow: calc(var(--strand-width) - var(--strand-ball)) 0 0 var(--strand-color);
+  -webkit-animation-name: ball;
+          animation-name: ball;
+  will-change: transform, box-shadow;
+}
+
+@-webkit-keyframes line {
+  to {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes line {
+  to {
+    transform: scaleX(0);
+  }
+}
+@-webkit-keyframes ball {
+  to {
+    transform: translateX(calc((var(--strand-width) - var(--strand-ball)) / 2));
+    box-shadow: 0 0 0 var(--strand-color);
+  }
+}
+@keyframes ball {
+  to {
+    transform: translateX(calc((var(--strand-width) - var(--strand-ball)) / 2));
+    box-shadow: 0 0 0 var(--strand-color);
+  }
+}

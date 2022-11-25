@@ -6,7 +6,7 @@
   --strand-height: 1rem;
   --strand-line: .250rem;
   --strand-ball: calc(var(--strand-height) * .75);
-  --animation-duration: 0.7s;
+  --animation-duration: 0.6s;
   --animation-delay: calc(var(--animation-duration) * -.375);
 }
 
